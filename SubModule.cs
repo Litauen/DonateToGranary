@@ -14,5 +14,11 @@ namespace DonateToGranary
                 gameInitializer.AddBehavior(new DonateFoodBaseBehavior());
             }
         }
+
+        protected override void OnBeforeInitialModuleScreenSetAsRoot()
+        {
+            Logger.IMGrey(LHelpers.GetModName() + " Loaded");
+        }
+
     }
 }
